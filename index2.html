@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Qual é a música?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<style>
+    body {
+        background-color: #2F615E; 
+    }
+</style>
+<center>
+<img src="music.png" alt="Descrição da imagem" height="200" width="400">
+</center>
+
+<center>
+<div class="loader">
+    <div class="loader-inner">
+      <div class="loader-block"></div>
+      <div class="loader-block"></div>
+      <div class="loader-block"></div>
+      <div class="loader-block"></div>
+      <div class="loader-block"></div>
+      <div class="loader-block"></div>
+      <div class="loader-block"></div>
+      <div class="loader-block"></div>
+    </div>
+  </div>
+</center>
+
+</head>
+<body>
+
+     <center><button id="start-game" onclick="startGame()">Iniciar jogo</button></center>
+    <div id="game-container"></div>
+    <button id="play-music" class="hidden">Play</button>
+    <label id="lbl-resposta" for="resposta" class="hidden">
+    <input type="text" id="resposta" class="hidden"  placeholder="Digite a música" required></input>
+    <button id="btn-resposta" class="hidden">Enviar</button>
+    <button id="btn-sopt" class="hidden">spotify-player</button>
+
+</body>
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
